@@ -1,33 +1,8 @@
-title: wu-kan # 站点标题
+title: GoodJob # 站点标题
 description: | # 头像背后的信息（html格式），<br/>代表换行
-  SYSU超算17级在读<br/>
-  水野爱<br/>
-  HPC<br/>
-  田宫例四驱车<br/>
-  <a href="mailto:i@wu-kan.cn">
-    <i class="fas fa-envelope"></i>
-  </a>
-  <a href="https://github.com/wu-kan">
-    <i class="fab fa-github"></i>
-  </a>
-  <a href="https://codeforces.com/profile/WuK">
-    <i class="fas fa-chart-bar"></i>
-  </a>
-  <a href="https://vjudge.net/user/WuK">
-    <i class="fas fa-smile"></i>
-  </a>
-  <a href="https://www.zhihu.com/people/wu.kan/activities">
-    <i class="fab fa-zhihu"></i>
-  </a>
-  <iframe
-    src="https://music.163.com/outchain/player?type=0&id=155059595&auto=0&height=32"
-    width=100%
-    height=52
-    frameborder="no"
-    border="0"
-    marginwidth="0"
-    marginheight="0"
-  ></iframe>
+  <br><br>
+  愿天下不再有需要被<br/>
+  保护的濒危动物<br/>
 url: https://wu-kan.cn # 你的域名，例如 https://wu-kan.github.io
 baseurl: "" # 假如你的博客是建在某个目录下的，请在这里加上目录名，并且下面配置的所有链接里的`/assets`前也要加，即`/your_baseurl/assets`。这一项结尾不要有'/'。
 
@@ -39,8 +14,8 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
       jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
         default:
           body:
-            theme-base: theme-base-07 # 可选的主题色包括08~0f，见 <https://github.com/poole/lanyon>
-            layout-reverse: true # 开启后sidebar在右边，反之左边
+            theme-base: theme-base-0d # 可选的主题色包括08~0f，见 <https://github.com/poole/lanyon>
+            layout-reverse: false # 开启后sidebar在右边，反之左边
             sidebar-overlay: true # 开启后正文不随sidebar移动而移动
           append_to_head: # 通过内嵌html的方式引入并定制插件，删改前确定知道自己在做什么。定制插件的方式可以参考这篇文章 <https://wu-kan.cn/_posts/2019-01-18-基于Jekyll搭建个人博客/>
             - | #一些页面优化标签，看不懂可跳过
@@ -61,12 +36,12 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             - | # 网站小图标，可换成你自己的图片，改href中的部分即可
               <link
                 rel="apple-touch-icon-precomposed"
-                href="https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=320"
+                href="https://gravatar.loli.net/avatar/baeb091fcf786752d38f20467c2355f9?s=320"
               />
               <link
                 rel="shortcut
                 icon"
-                href="https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=32"
+                href="https://gravatar.loli.net/avatar/baeb091fcf786752d38f20467c2355f9?s=32"
               />
             - | # 来自lanyon的页面样式，不要改
               <link
@@ -78,77 +53,77 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 async="async"
                 src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/js/all.min.js"
               ></script>
-            - | # 引入live2d看板娘！不需要可以把这一项都删掉
-              <link
-                rel="stylesheet"
-                href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/pio.min.css"
-              />
-              <script
-                async="async"
-                src="https://cdn.jsdelivr.net/combine/gh/Dreamer-Paul/Pio@2.4/static/l2d.min.js,gh/Dreamer-Paul/Pio@2.4/static/pio.min.js"
-                onload='
-                  let pio_container = document.createElement("div");
-                  pio_container.classList.add("pio-container");
-                  pio_container.classList.add("right");
-                  pio_container.style.bottom = "-2rem";
-                  pio_container.style.zIndex = "1";
-                  document.body.insertAdjacentElement("beforeend", pio_container);
-                  let pio_action = document.createElement("div");
-                  pio_action.classList.add("pio-action");
-                  pio_container.insertAdjacentElement("beforeend", pio_action);
-                  let pio_canvas = document.createElement("canvas");
-                  pio_canvas.id = "pio";
-                  pio_canvas.style.width = "14rem";
-                  pio_canvas.width = "600";
-                  pio_canvas.height = "800";
-                  pio_container.insertAdjacentElement("beforeend", pio_canvas);
-                  let pio = new Paul_Pio({
-                    "mode": "fixed",
-                    "hidden": true,
-                    "night": "for(let i=7; i<16; ++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break; }",
-                    "content": {
-                      "link": ["https:\/\/jekyll-theme-WuK.wu-kan.cn"],
-                      "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
-                      "hidden": true,
-                      "custom": [{
-                        "selector": "a",
-                        "type": "link",
-                      }, {
-                        "selector": ".sidebar-toggle",
-                        "text": "打开侧边栏叭~"
-                      }, {
-                        "selector": ".effect-info",
-                        "text": "哇，你发现了什么！"
-                      }, {
-                        "selector": "#sidebar-search-input",
-                        "text": "想搜索什么呢？很多干货哦！"
-                      }, {
-                        "selector": "#toc",
-                        "text": "这是目录~"
-                      }, {
-                        "selector": ".page-title",
-                        "text": "这是标题~"
-                      }, {
-                        "selector": ".v",
-                        "text": "评论没有审核，要对自己的发言负责哦~"
-                      }]
-                    },
-                    "model": [
-                      "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/33/model.2018.bls-winter.json",
-                      "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/platelet-2/model.json",
-                      "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/xiaomai/xiaomai.model.json",
-                      "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/mashiro/seifuku.model.json",
-                      "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/Violet/14.json",
-                      "https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/Kobayaxi/Kobayaxi.model.json",
-                      "https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/mikoto/mikoto.model.json",
-                      "https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/uiharu/uiharu.model.json"]
-                  });'
-              ></script>
-            - | # 百度爬虫推送，http站点使用 http://push.zhanzhang.baidu.com/push.js
-              <script
-                src='https://zz.bdstatic.com/linksubmit/push.js'
-                async="async"
-              ></script>
+            # - | # 引入live2d看板娘！不需要可以把这一项都删掉
+              # <link
+              #   rel="stylesheet"
+              #   href="https://cdn.jsdelivr.net/gh/Dreamer-Paul/Pio@2.4/static/pio.min.css"
+              # />
+              # <script
+              #   async="async"
+              #   src="https://cdn.jsdelivr.net/combine/gh/Dreamer-Paul/Pio@2.4/static/l2d.min.js,gh/Dreamer-Paul/Pio@2.4/static/pio.min.js"
+              #   onload='
+              #     let pio_container = document.createElement("div");
+              #     pio_container.classList.add("pio-container");
+              #     pio_container.classList.add("right");
+              #     pio_container.style.bottom = "-2rem";
+              #     pio_container.style.zIndex = "1";
+              #     document.body.insertAdjacentElement("beforeend", pio_container);
+              #     let pio_action = document.createElement("div");
+              #     pio_action.classList.add("pio-action");
+              #     pio_container.insertAdjacentElement("beforeend", pio_action);
+              #     let pio_canvas = document.createElement("canvas");
+              #     pio_canvas.id = "pio";
+              #     pio_canvas.style.width = "14rem";
+              #     pio_canvas.width = "600";
+              #     pio_canvas.height = "800";
+              #     pio_container.insertAdjacentElement("beforeend", pio_canvas);
+              #     let pio = new Paul_Pio({
+              #       "mode": "fixed",
+              #       "hidden": true,
+              #       "night": "for(let i=7; i<16; ++i) if(document.body.classList.contains(`theme-base-0`+i.toString(16))) { document.body.classList.remove(`theme-base-0`+i.toString(16)); document.body.classList.add(`theme-base-0`+((i-6)%9+7).toString(16)); break; }",
+              #       "content": {
+              #         "link": ["https:\/\/jekyll-theme-WuK.wu-kan.cn"],
+              #         "skin": ["要换成我的朋友吗？", "让她放个假吧~"],
+              #         "hidden": true,
+              #         "custom": [{
+              #           "selector": "a",
+              #           "type": "link",
+              #         }, {
+              #           "selector": ".sidebar-toggle",
+              #           "text": "打开侧边栏叭~"
+              #         }, {
+              #           "selector": ".effect-info",
+              #           "text": "哇，你发现了什么！"
+              #         }, {
+              #           "selector": "#sidebar-search-input",
+              #           "text": "想搜索什么呢？很多干货哦！"
+              #         }, {
+              #           "selector": "#toc",
+              #           "text": "这是目录~"
+              #         }, {
+              #           "selector": ".page-title",
+              #           "text": "这是标题~"
+              #         }, {
+              #           "selector": ".v",
+              #           "text": "评论没有审核，要对自己的发言负责哦~"
+              #         }]
+              #       },
+              #       "model": [
+              #         "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/33/model.2018.bls-winter.json",
+              #         "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/platelet-2/model.json",
+              #         "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/xiaomai/xiaomai.model.json",
+              #         "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/mashiro/seifuku.model.json",
+              #         "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/Violet/14.json",
+              #         "https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/Kobayaxi/Kobayaxi.model.json",
+              #         "https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/mikoto/mikoto.model.json",
+              #         "https:\/\/cdn.jsdelivr.net/gh/xiaoski/live2d_models_collection/uiharu/uiharu.model.json"]
+              #     });'
+              # ></script>
+            # - | # 百度爬虫推送，http站点使用 http://push.zhanzhang.baidu.com/push.js
+            #   <script
+            #     src='https://zz.bdstatic.com/linksubmit/push.js'
+            #     async="async"
+            #   ></script>
             - | # 网站背景图片，分竖屏、宽屏；改链接即可，不想用可以把这一项全删掉；要换壁纸图片的话可把url内的部分换成你自己的，比如你放在 /assets/image/background.jpg，那就改成 url(/assets/image/background.jpg)
               <style>
                 .wrap {
@@ -229,7 +204,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             disable: false # 是否不显示sidebar
             avatar: # 侧边栏显示的头像
               enable: true
-              img: https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=320 # 头像的地址
+              img: https://gravatar.loli.net/avatar/baeb091fcf786752d38f20467c2355f9?s=320 # 头像的地址
             nav: # 导航部分的内容，你也可以自己增加文字、图标（来自fontawesome）和对应的链接
               - title: '<i class="fas fa-home fa-fw"></i> 首页'
                 href: /
@@ -378,60 +353,60 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                     document.getElementById("run_time_hour"),
                     document.getElementById("run_time_minute"),
                     document.getElementById("run_time_second"),
-                    "10/04/2017 11:03:56")// 这是我第一篇CSDN博客的时间
+                    "11/03/2021 20:08:00")
                   </script>
                 </div>
-              - | # 不蒜子页面统计，看不懂可不改
-                <div>
-                  <div>
-                    <i class="fas fa-eye fa-fw"></i>
-                    <span id="busuanzi_value_page_pv">
-                      <i class="fas fa-spinner fa-pulse"></i>
-                    </span>次
-                  </div>
-                  <div>
-                    <i class="fas fa-paw fa-fw"></i>
-                    <span id="busuanzi_value_site_pv">
-                      <i class="fas fa-spinner fa-pulse"></i>
-                    </span>枚
-                  </div>
-                  <div>
-                    <i class="fas fa-user-friends fa-fw"></i>
-                    <span id="busuanzi_value_site_uv">
-                      <i class="fas fa-spinner fa-pulse"></i>
-                    </span>人
-                  </div>
-                  <script
-                    src='https://cdn.jsdelivr.net/npm/busuanzi@2.3.0'
-                    async='async'
-                  ></script>
-                </div>
+              # - | # 不蒜子页面统计，看不懂可不改
+              #   <div>
+              #     <div>
+              #       <i class="fas fa-eye fa-fw"></i>
+              #       <span id="busuanzi_value_page_pv">
+              #         <i class="fas fa-spinner fa-pulse"></i>
+              #       </span>次
+              #     </div>
+              #     <div>
+              #       <i class="fas fa-paw fa-fw"></i>
+              #       <span id="busuanzi_value_site_pv">
+              #         <i class="fas fa-spinner fa-pulse"></i>
+              #       </span>枚
+              #     </div>
+              #     <div>
+              #       <i class="fas fa-user-friends fa-fw"></i>
+              #       <span id="busuanzi_value_site_uv">
+              #         <i class="fas fa-spinner fa-pulse"></i>
+              #       </span>人
+              #     </div>
+              #     <script
+              #       src='https://cdn.jsdelivr.net/npm/busuanzi@2.3.0'
+              #       async='async'
+              #     ></script>
+              #   </div>
               - | # 觉得我的主题好用的话，让更多的人知道它吧！
                 <div>
                   <i class="fas fa-thumbs-up fa-fw"></i>
                   <a href="https://jekyll-theme-WuK.wu-kan.cn">
-                    jekyll-theme-WuK
+                    Theme: jekyll-theme-WuK
                   </a>
                 </div>
               - | # Copyright声明
                 <div>
                   <i class="fas fa-copyright fa-fw"></i>
-                  2017-2020 WuK
+                  2017-2020 GoodJob
                 </div>
-              - | # 我的备案信息，请你的网站删掉这一项。互联网非法外之地！
-                <div>
-                  <i class="fas fa-info-circle fa-fw"></i>
-                  <a href="http://beian.miit.gov.cn">
-                    粤ICP备 20024947号
-                  </a>
-                </div>
-              - | # 公安网备信息
-                <div>
-                  <img src="http://www.beian.gov.cn/img/new/gongan.png" class="fa-fw"></img>
-                  <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=34070202000407">
-                    皖公网安备 34070202000407号
-                  </a>
-                </div>
+              # - | # 我的备案信息，请你的网站删掉这一项。互联网非法外之地！
+              #   <div>
+              #     <i class="fas fa-info-circle fa-fw"></i>
+              #     <a href="http://beian.miit.gov.cn">
+              #       粤ICP备 20024947号
+              #     </a>
+              #   </div>
+              # - | # 公安网备信息
+              #   <div>
+              #     <img src="http://www.beian.gov.cn/img/new/gongan.png" class="fa-fw"></img>
+              #     <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=34070202000407">
+              #       皖公网安备 34070202000407号
+              #     </a>
+              #   </div>
             wordcount: # 全站字数统计
               enable: false # 本地调试时建议关闭，非常影响站点生成速度（所需时间与博文数量的平方成正比）
               prepend: <i class="fas fa-user-edit fa-fw"></i>
@@ -569,9 +544,9 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 for(let x of document.getElementsByClassName("v"))
                   new Valine({
                     "el": x,
-                    "appId": "9hABRddSuEkTgqLrt1VSK5B1-gzGzoHsz",
-                    "appKey": "NJ7RwmgrxsF7KDzlqU7YewlL",
-                    "placeholder": "在这里评论吧！填写邮箱可以获得 Gravatar 头像和回复通知哦",
+                    "appId": "1pOI0AQHpq1lhJIAay80pf2K-gzGzoHsz",
+                    "appKey": "tOix7exY6WURhqU2EYgtuEtw",
+                    "placeholder": "在这里评论吧！我们期待您的反馈",
                     "requiredFields": ["nick","mail"],
                     "visitor": true,
                     "recordIP": true
@@ -600,8 +575,8 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
           copyright:
             | # 我的文章使用最宽松的知识共享协议：署名 4.0 国际 (CC BY 4.0)。您可以自由地：共享 — 在任何媒介以任何形式复制、发行本作品；演绎 — 修改、转换或以本作品为基础进行创作；在任何用途下，甚至商业目的。只要你遵守许可协议条款，许可人就无法收回你的这些权利。惟须遵守下列条件：署名 — 您必须给出适当的署名，提供指向本许可协议的链接，同时标明是否（对原始作品）作了修改。您可以用任何合理的方式来署名，但是不得以任何方式暗示许可人为您或您的使用背书。
             <br/>
-            <i class="fas fa-coffee fa-fw"></i>
-            <a href="/merger/">如果这篇博客帮助到你，可以请我喝一杯咖啡~</a>
+            <!--<i class="fas fa-coffee fa-fw"></i>
+            <a href="/merger/">如果这篇文章帮助到你，可以请我喝一杯咖啡~</a>-->
             <br/>
             <i class="fab fa-creative-commons-by fa-fw"></i>
             <a
@@ -609,7 +584,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
               rel="license">
               CC BY 4.0
             </a>
-            （除特别声明或转载文章外）
+            <!--（除特别声明或转载文章外）-->
         tags:
           pie_chart: # 显示一个标签的饼状统计图，需要引入 mermaid
             enable: false
@@ -626,40 +601,40 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
           year_count: true
           toc: # 在正文里显示一个归档的目录
             enable: false
-        merger: # 打赏页，需要配置！
-          append_to_head:
-            - | # 需要配置的变量见<https://merger.justhx.com/cn/docs/configure>
-              <script>
-                var myname = "WuK";
-                var profile = "i@wu-kan.cn";
-                var usage = "payment";
-                var wechat = "wxp://f2f0BhUoIC_9gex7-tC2PRvVuoA486mK5WyC";
-                var tenpay = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=CAEQ77zFwQMY-6u57gU%3D_xxx_sign&u=942759535&n=%E8%94%9A";
-                var alipay = "https://qr.alipay.com/fkx02750b5kbplxvudqrx16";
-                var paypal = "https://paypal.me/wukan0621";
-                var multilingual = false;
-                var branding = false;
-                var title = "选择你的支付方式";
-                var subtitle = "跟随进一步的指示以向" + myname + "付款";
-                var qrcodeapi = "https://www.zhihu.com/qrcode?url=";
-                var gravatar_url = "https://gravatar.loli.net/avatar/";
-              </script>
-            - |
-              <meta
-                charset="utf-8"
-              />
-              <meta
-                name="viewport"
-                content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-              />
-              <meta
-                http-equiv="Content-Security-Policy"
-                content="upgrade-insecure-requests"
-              />
-            - | # merger的页面样式
-              <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.26.1/assets/styles/spectre.css/spectre-modified.min.css,gh/hifocus/merger@0.26.1/assets/styles/style.min.css">
-              <script defer="defer" src="https://cdn.jsdelivr.net/combine/npm/jquery@3.5.1"></script>
-              <script defer="defer" src="https://cdn.jsdelivr.net/combine/gh/lrsjng/jquery-qrcode@0.18.0/dist/jquery-qrcode.min.js,npm/blueimp-md5@2.18.0/js/md5.min.js,gh/hifocus/merger@0.26.1/assets/js/function.min.js,gh/hifocus/merger@0.26.1/assets/js/font_974919_xgtacm93vxp.min.js"></script>
+        # merger: # 打赏页，需要配置！
+        #   append_to_head:
+        #     - | # 需要配置的变量见<https://merger.justhx.com/cn/docs/configure>
+        #       <script>
+        #         var myname = "WuK";
+        #         var profile = "i@wu-kan.cn";
+        #         var usage = "payment";
+        #         var wechat = "wxp://f2f0BhUoIC_9gex7-tC2PRvVuoA486mK5WyC";
+        #         var tenpay = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=CAEQ77zFwQMY-6u57gU%3D_xxx_sign&u=942759535&n=%E8%94%9A";
+        #         var alipay = "https://qr.alipay.com/fkx02750b5kbplxvudqrx16";
+        #         var paypal = "https://paypal.me/wukan0621";
+        #         var multilingual = false;
+        #         var branding = false;
+        #         var title = "选择你的支付方式";
+        #         var subtitle = "跟随进一步的指示以向" + myname + "付款";
+        #         var qrcodeapi = "https://www.zhihu.com/qrcode?url=";
+        #         var gravatar_url = "https://gravatar.loli.net/avatar/";
+        #       </script>
+        #     - |
+        #       <meta
+        #         charset="utf-8"
+        #       />
+        #       <meta
+        #         name="viewport"
+        #         content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        #       />
+        #       <meta
+        #         http-equiv="Content-Security-Policy"
+        #         content="upgrade-insecure-requests"
+        #       />
+        #     - | # merger的页面样式
+        #       <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.26.1/assets/styles/spectre.css/spectre-modified.min.css,gh/hifocus/merger@0.26.1/assets/styles/style.min.css">
+        #       <script defer="defer" src="https://cdn.jsdelivr.net/combine/npm/jquery@3.5.1"></script>
+        #       <script defer="defer" src="https://cdn.jsdelivr.net/combine/gh/lrsjng/jquery-qrcode@0.18.0/dist/jquery-qrcode.min.js,npm/blueimp-md5@2.18.0/js/md5.min.js,gh/hifocus/merger@0.26.1/assets/js/function.min.js,gh/hifocus/merger@0.26.1/assets/js/font_974919_xgtacm93vxp.min.js"></script>
     
         home: # 展示页的配置可跳过，详见<https://revealjs.com/>
           append_to_section_tag:
@@ -669,7 +644,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
             - key: data-separator-vertical # 垂直展示页分隔符
               value: <!-- .slide vertical=true -->
             - key: data-background-color
-              value: "White"
+              value: rgba(255,255,255,0.4)
           prepend: |
             <link
               rel="stylesheet"
@@ -736,12 +711,12 @@ remote_theme: https://github.com/wu-kan/jekyll-theme-WuK@4.0.2 #使用固定版�
 readme_index: # 缺失index.md和index.html时，使用README.md代替之
   with_frontmatter: true # 支持带有yaml头的README
 
-webmaster_verifications: # <https://jekyll.github.io/jekyll-seo-tag/usage/>
-  google: YIKi1rBnyUaS-DMYiluseI5kZzTwjCkTFmKkSkMZDJk
-  baidu: szbTSfUGAB
+# webmaster_verifications: # <https://jekyll.github.io/jekyll-seo-tag/usage/>
+#   google: YIKi1rBnyUaS-DMYiluseI5kZzTwjCkTFmKkSkMZDJk
+#   baidu: szbTSfUGAB
 
 permalink: /:categories/:year-:month-:day-:title/ #生成文章的地址格式，我希望它和_posts目录下的格式一样
-# timezone: Asia/Shanghai # 解决githubpage显示时间不正确的问题，见<https://www.iana.org/time-zones>
+timezone: Asia/Shanghai # 解决githubpage显示时间不正确的问题，见<https://www.iana.org/time-zones>
 future: true # 允许发布时间在未来的文章
 
 # limit_posts: 999 # 限制博文数量
