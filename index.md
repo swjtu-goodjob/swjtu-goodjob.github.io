@@ -1,4 +1,4 @@
-<h1 style="font-size: 1.4em"><strong>GoodJob智能濒危动物监测有限公司</strong></h1>
+<h1 style="font-size: 1.4em"><strong>GoodJob智能濒危动物监测有限公司</strong></h1><br>
 
 　　欢迎访问**GoodJob**公司的网站，我们是一家力致于通过物联网检测来保护濒危动物的公司。在这里你能找到我们公司的目标与愿景，见证我们的成长，挖掘我们走过的足迹。
 
